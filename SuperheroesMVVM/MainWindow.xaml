@@ -75,7 +75,7 @@
         <StackPanel DockPanel.Dock="Bottom"
                             Orientation="Horizontal"
                             HorizontalAlignment="Center">
-            <Button Command="{Binding Path=AnteriorCommand}">
+            <Button Command="{Binding Path=AnteriorCommand}" Template="{DynamicResource ButtonControlTemplate}">
                 <Image x:Name="leftImage"
                            Style="{StaticResource flechas}"></Image>
             </Button>
@@ -90,7 +90,7 @@
                                Style="{StaticResource contador}"
                                Margin="0,0,5,5"
                                Text="{Binding Path=Total}"></TextBlock>
-            <Button  Command="{Binding Path=SiguienteCommand}">
+            <Button  Command="{Binding Path=SiguienteCommand}" Template="{DynamicResource ButtonControlTemplate}">
                 <Image x:Name="rightImage"
                            Style="{StaticResource flechas}"
                            RenderTransformOrigin="0.5,0.5">
